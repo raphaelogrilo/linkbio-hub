@@ -89,14 +89,20 @@ export default function LinkBioPage({ client: c }: { client: Client }) {
           </h1>
           <p style={{ fontSize: 13, fontWeight: 400, color: "#aec4de", margin: "11px 0 0", letterSpacing: .2 }}>{c.tagline}</p>
 
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, marginTop: 18 }}>
-            <span style={{ color: accent, fontSize: 13, letterSpacing: 1 }}>★★★★★</span>
-            <span style={{ fontSize: 12, fontWeight: 600, color: "#eaf1fb" }}>{c.socialProof.rating}</span>
-            <span style={{ width: 4, height: 4, borderRadius: "50%", background: "rgba(255,255,255,.25)", display: "inline-block" }} />
-            <span style={{ fontSize: 12, fontWeight: 500, color: "#aec4de" }}>{c.socialProof.reviews}</span>
-            <span style={{ width: 4, height: 4, borderRadius: "50%", background: "rgba(255,255,255,.25)", display: "inline-block" }} />
-            <span style={{ fontSize: 12, fontWeight: 500, color: "#aec4de" }}>{c.socialProof.followers}</span>
-          </div>
+          {c.socialProof.followers && (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, marginTop: 18 }}>
+              {c.socialProof.rating && <>
+                <span style={{ color: accent, fontSize: 13, letterSpacing: 1 }}>★★★★★</span>
+                <span style={{ fontSize: 12, fontWeight: 600, color: "#eaf1fb" }}>{c.socialProof.rating}</span>
+                <span style={{ width: 4, height: 4, borderRadius: "50%", background: "rgba(255,255,255,.25)", display: "inline-block" }} />
+              </>}
+              {c.socialProof.reviews && <>
+                <span style={{ fontSize: 12, fontWeight: 500, color: "#aec4de" }}>{c.socialProof.reviews}</span>
+                <span style={{ width: 4, height: 4, borderRadius: "50%", background: "rgba(255,255,255,.25)", display: "inline-block" }} />
+              </>}
+              <span style={{ fontSize: 12, fontWeight: 500, color: "#aec4de" }}>{c.socialProof.followers}</span>
+            </div>
+          )}
         </div>
 
         {/* intro */}

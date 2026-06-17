@@ -5,7 +5,7 @@
     "fullName": "Cuidato Odontologia Avançada",
     "tagline": "Transformando sorrisos, cultivando confiança 🦷",
     "intro": "Sua transformação começa aqui. Agende uma avaliação e descubra o sorriso que combina com você.",
-    "cro": "CRO-MG ATIVO",
+    "cro": null,
     "photo": null,
     "theme": {
       "bg": "#091a2e",
@@ -18,8 +18,8 @@
       "primaryDark": "#1f5fc0"
     },
     "socialProof": {
-      "rating": "4,9",
-      "reviews": "+320 avaliações",
+      "rating": null,
+      "reviews": null,
       "followers": "1,1 mil seguidores"
     },
     "cta": {
