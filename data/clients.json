@@ -49,12 +49,6 @@
     ],
     "links": [
       {
-        "title": "Nossa Localização",
-        "sub": "Como chegar até a clínica",
-        "href": "https://www.google.com/maps/search/?api=1&query=Rua+Ipanema+95+Coronel+Fabriciano+MG",
-        "icon": "map"
-      },
-      {
         "title": "Nosso Instagram",
         "sub": "@cuidato.odonto · Conteúdo e resultados",
         "href": "https://www.instagram.com/cuidato.odonto",

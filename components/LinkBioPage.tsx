@@ -114,18 +114,6 @@ export default function LinkBioPage({ client: c }: { client: Client }) {
           <span style={{ background: accent, color: c.theme.gradMid, fontSize: 9.5, fontWeight: 800, letterSpacing: .3, padding: "5px 9px", borderRadius: 999, whiteSpace: "nowrap" }}>{c.cta.tag}</span>
         </a>
 
-        {/* WhatsApp */}
-        <a href={`https://wa.me/${c.whatsapp}`} target="_blank" rel="noopener noreferrer" className="btn-hover" style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 13, padding: "16px 18px", borderRadius: 18, background: "linear-gradient(135deg, #2bd06f, #1c9c50)", textDecoration: "none", boxShadow: "0 8px 24px -10px rgba(37,211,102,.7)", transition: "transform .18s ease" }}>
-          <div style={{ width: 42, height: 42, borderRadius: 12, background: "rgba(255,255,255,.2)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-            <Icons.WhatsApp size={23} />
-          </div>
-          <div style={{ flex: 1, lineHeight: 1.2 }}>
-            <div style={{ fontSize: 15, fontWeight: 700, color: "#fff" }}>Falar via WhatsApp</div>
-            <div style={{ fontSize: 11, fontWeight: 400, color: "#e1fbeb", marginTop: 3 }}>Tire suas dúvidas agora</div>
-          </div>
-          <Icons.Chevron />
-        </a>
-
         {/* secondary links */}
         {c.links.map((link, i) => (
           <a key={i} href={link.href} target="_blank" rel="noopener noreferrer" className="link-card btn-hover" style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 13, padding: "15px 17px", borderRadius: 18, background: "rgba(255,255,255,.055)", border: "1px solid rgba(255,255,255,.1)", textDecoration: "none", backdropFilter: "blur(6px)", transition: "transform .18s ease, background .18s ease, border-color .18s ease" }}>
@@ -178,25 +166,6 @@ export default function LinkBioPage({ client: c }: { client: Client }) {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* social icons */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 14, marginTop: 26 }}>
-          {c.socials.instagram && (
-            <a href={c.socials.instagram} target="_blank" rel="noopener noreferrer" style={socialIconStyle}>
-              <Icons.Instagram size={19} />
-            </a>
-          )}
-          {c.socials.whatsapp && (
-            <a href={c.socials.whatsapp} target="_blank" rel="noopener noreferrer" style={socialIconStyle}>
-              <Icons.WhatsAppSmall size={19} />
-            </a>
-          )}
-          {c.socials.facebook && (
-            <a href={c.socials.facebook} target="_blank" rel="noopener noreferrer" style={socialIconStyle}>
-              <Icons.Facebook size={19} />
-            </a>
-          )}
         </div>
 
         <p style={{ textAlign: "center", fontSize: 10, fontWeight: 400, color: "#6f88a6", margin: "18px 0 0", letterSpacing: .3 }}>{c.footer}</p>
