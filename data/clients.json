@@ -1,5 +1,56 @@
 [
   {
+    "slug": "ntw",
+    "name": "NTW Timóteo",
+    "fullName": "NTW Timóteo · Contabilidade e Gestão",
+    "tagline": "Contabilidade próxima de você, em Timóteo.",
+    "intro": "",
+    "cro": null,
+    "photo": "/clientes/ntw/logo-branca.webp",
+    "theme": {
+      "bg": "#04162c",
+      "gradFrom": "#0c2e57",
+      "gradMid": "#071f3a",
+      "gradTo": "#04162c",
+      "accent": "#f6a623",
+      "accentDark": "#ec8f0f",
+      "primary": "#2f86e4",
+      "primaryDark": "#1a5cbf"
+    },
+    "socialProof": { "rating": null, "reviews": null, "followers": null },
+    "cta": {
+      "label": "Fale com a equipe",
+      "sub": "Resposta em poucos minutos",
+      "tag": "CONTATO",
+      "href": "https://api.whatsapp.com/send/?phone=553186111994"
+    },
+    "whatsapp": "553186111994",
+    "address": {
+      "street": "R. 31 de Março, 205 — loja 05",
+      "city": "Centro · Timóteo · MG",
+      "mapsHref": "https://www.google.com/maps/search/?api=1&query=R.+31+de+Mar%C3%A7o+205+loja+05+Centro+Tim%C3%B3teo+MG"
+    },
+    "hours": [
+      { "days": "Seg — Sex", "time": "08h — 18h" },
+      { "days": "Sábado",    "time": "Fechado" }
+    ],
+    "openHours": { "weekStart": 1, "weekEnd": 5, "from": 8, "to": 18 },
+    "openSat":   { "from": 0, "to": 0 },
+    "services": [
+      "Contabilidade",
+      "Gestão Empresarial",
+      "Assessoria Fiscal",
+      "RH e Folha"
+    ],
+    "links": [],
+    "socials": {
+      "instagram": "https://www.instagram.com/ntwtimoteo/",
+      "whatsapp": "https://api.whatsapp.com/send/?phone=553186111994",
+      "facebook": "https://www.facebook.com/NTWTIMOTEO/"
+    },
+    "footer": "© NTW Timóteo — Contabilidade e Gestão Empresarial · CRC MG 107.375/O"
+  },
+  {
     "slug": "cuidato",
     "name": "Cuidato",
     "fullName": "Cuidato Odontologia Avançada",
